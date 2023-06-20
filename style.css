@@ -1,4 +1,3 @@
-
 .bgimage {
     height:200vh;
     background: url('https://media.licdn.com/dms/image/D4D03AQGq1OSY2-SSsA/profile-displayphoto-shrink_400_400/0/1671215670399?e=1692835200&v=beta&t=esaAq-M9bUh_y6L36tAJyTNN8ngSLgcgVJ2zOCB8ebo');
@@ -20,6 +19,41 @@
     transform: translate(-50%, -50%);
     color: white;
 }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.transparent {
+    background-color: transparent;
+  }
+  
+  .navbar.black {
+    background-color: black;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  
 .navbar-light .navbar-nav .nav-link {
             color: smokewhite;
         }
@@ -44,3 +78,91 @@
         .servicesText:hover {
             border: 1px solid #008000;
         }
+        *,jpg
+        *:before,
+        *:after{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            background: url("background.jpg") center center fixed;
+            background-size: cover;
+        }
+        h2{
+            position: a;
+        }
+        h2 {
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 50%;
+            font-family: "Rubik", sans-serif;
+            color: #ffffff;
+            letter-spacing: normal;
+            cursor: pointer;
+            filter: blur(5px);
+            transition: 0.3s all;
+            text-align: center;
+        }
+        
+        h2:hover {
+            filter: blur(0);
+        }
+        
+        .larger-text {
+            font-size: 45px;
+        }
+        
+        .smaller-text {
+            font-size: 30px;
+        }
+        .card {
+            position: relative;
+            background-color: #f9f9f9;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+          }
+          
+          .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+          
+          .servicesText {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+          }
+          
+          .servicesImage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            z-index: 0;
+          }
+          
+          .card:hover .servicesImage {
+            transform: translateY(-100%);
+          }
+          .card p {
+            filter: blur(5px);
+            transition: filter 0.3s ease;
+          }
+          
+          .card:hover p {
+            filter: blur(0);
+          }
+                    
